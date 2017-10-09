@@ -66,6 +66,7 @@ namespace TankerKoenig.Api
         {
             await AddGasStation(new GasStation(id));
         }
+
         /// <summary>
         /// Loads the detailed information for a Gas Station.
         /// </summary>
@@ -153,8 +154,7 @@ namespace TankerKoenig.Api
             var options = new SearchOptions(lat, lng, rad);
             return await SearchForGasStations(options);
         }
-
-
+        
         /// <summary>
         /// Refreshes the gas prices.
         /// </summary>
@@ -163,7 +163,9 @@ namespace TankerKoenig.Api
         /// </exception>
         /// <exception cref="InvalidApiKeyException">If Apikey is invalid</exception>
         public async Task<Dictionary<Guid, GasStation>> RefreshGasPrices()
-        {//split to 10 allways max
+        {
+            //One query is allowed to have maximum 10 Gas Stations
+            //We solve this by multiple queries if more than 10 Gas Stations are present
             var lists = SplitList(gasStations.Keys.ToList(), 10);
             foreach (var list in lists)
             {

@@ -1,9 +1,11 @@
 # Tankerkoenig-dotNet
+[![NuGet](https://img.shields.io/nuget/v/TankerKoenig.svg)](https://www.nuget.org/packages/TankerKoenig)
 
 This is a Wrapper for the Tankerkoenig API for the .NET Framework.
 
-Tankerkoenig is a website, with all Gas Stations and their prices provided by MTS-K (Markttransparenzstelle für Kraftstoffe)
+Tankerkoenig is a website, with all Gas Stations in Germany and their prices provided by MTS-K (Markttransparenzstelle für Kraftstoffe)
 
+Feel free to edit the Code and create a Pull Request!
 ## Usage
 Get yourself an API Key from Tankerkoenig [here](https://creativecommons.tankerkoenig.de/api-key)
 

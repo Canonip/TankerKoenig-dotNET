@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace TankerKoenig.Api
 {
@@ -77,26 +70,5 @@ namespace TankerKoenig.Api
         {
             return ID.GetHashCode();
         }
-    }
-
-   
-
-    struct JsonAnswer
-    {
-        bool Ok { get; set; }
-        string Message { get; set; }
-        JsonGasStation[] Prices { get; set; }
-
-    }
-    struct JsonGasStation
-    {
-        string Uuid { get; set; }
-        string Name { get; set; }
-        string Brand { get; set; }
-        string Street { get; set; }
-        string Place { get; set; }
-        double Lat { get; set; }
-        double Lng { get; set; }
-
     }
 }
