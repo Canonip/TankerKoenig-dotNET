@@ -1,5 +1,7 @@
 # Tankerkoenig-dotNet
 [![NuGet](https://img.shields.io/nuget/v/TankerKoenig.svg)](https://www.nuget.org/packages/TankerKoenig)
+[![AppVeyor](https://img.shields.io/appveyor/ci/Canonip/tankerkoenig-dotnet.svg)](https://ci.appveyor.com/project/Canonip/tankerkoenig-dotnet)
+[![AppVeyor tests](https://img.shields.io/appveyor/tests/Canonip/tankerkoenig-dotnet.svg)](https://ci.appveyor.com/project/Canonip/tankerkoenig-dotnet)
 
 This is a Wrapper for the Tankerkoenig API for the .NET Framework.
 
